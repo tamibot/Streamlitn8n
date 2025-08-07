@@ -27,7 +27,7 @@ def send_message_to_llm(session_id, message):
         return f"Error: {response.status_code} - {response.text}"
 
 def main():
-    st.title("Chat with LLM")
+    st.title("Agente para Aurrera")
 
     # Initialize session state
     if "messages" not in st.session_state:
@@ -58,4 +58,5 @@ def main():
             st.write(llm_response)
 
 if __name__ == "__main__":
+
     main()
